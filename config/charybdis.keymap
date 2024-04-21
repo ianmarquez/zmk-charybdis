@@ -155,7 +155,34 @@
 &none  &none      &none      &none      &kp C_VOLUME_UP           &none  &none      &none      &none      &none
 &none  &none      &none      &none      &kp C_VOLUME_DOWN         &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none
 &none  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_MUTE                &none  &none      &none      &none      &none
-                             &none      &trans             &none         &none      &none
+                             &mo 4      &trans             &none         &none      &none
+            >;
+        };
+        
+        Scroll {
+
+            // --------------------------           --------------------------
+            // |    |    |    |    |    |  Layer 4  |    |    |    |    |    |
+            // |    |    |    |    |    |           |    |    |    |    |    |
+            // |    |    |    |    |    |           |    |    |    |    |    |
+            // --------------------------           --------------------------
+            // |    |    |    |/||\|    |           |    |    |    |    |    |
+            // |    |    |    |HOLD|    |           |    |    |    |    |    |
+            // |    |    |    |\||/|    |           |    |    |    |    |    |
+            // --------------------------           --------------------------
+            // |    |    |    |    |    |           |    |    |    |    |    |
+            // |    |    |    |    |    |           |    |    |    |    |    |
+            // |    |    |    |    |    |           |    |    |    |    |    |
+            // ------------------------------- -------------------------------
+            //                |    |/||\|    | |    |    |
+            //                |    |HOLD|    | |    |    |
+            //                |    |\||/|    | |    |    |
+            //                ---------------- -----------
+            bindings = <
+&trans  &trans  &trans   &trans  &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans               &trans  &trans  &trans  &trans  &trans
+                        &trans   &trans  &trans       &trans  &trans
             >;
         };
     };
