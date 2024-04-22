@@ -98,10 +98,10 @@
             //                ---------------- -----------
 
             bindings = <
-&kp EXCLAMATION  &kp AT                &kp POUND              &kp DOLLAR        &kp PERCENT                &kp CARET  &kp AMPERSAND      &kp ASTERISK  &none      &none
-&none            &kp TILDE             &kp GRAVE              &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp LEFT   &kp DOWN           &kp UP        &kp RIGHT  &kp BACKSLASH
-&none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE            &kp SQT    &kp DOUBLE_QUOTES  &kp MINUS     &kp UNDER  &kp PIPE
-                                                              &none             &none              &trans             &kp PLUS           &kp EQUAL
+&kp ESCAPE         &kp EXCL              &kp AMPERSAND          &kp PIPE          &kp UNDER                  &kp MINUS    &kp PLUS   &kp EQUAL  &kp ASTERISK  &kp SLASH
+&kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp GRAVE              &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT     &kp BACKSLASH
+&kp POUND          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE            &kp PERCENT  &kp TILDE  &kp AT     &kp DOLLAR    &kp CARET
+                                                                &none             &none              &trans               &kp PLUS   &kp EQUAL
             >;
         };
 
