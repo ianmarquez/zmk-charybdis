@@ -71,10 +71,10 @@
             //                ------------------  -----------
 
             bindings = <
-&kp Q  &kp W             &kp E             &kp R                   &kp T                 &kp Y  &kp U                     &kp I                   &kp O              &kp P
-&kp A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LSHIFT F      &kp G                 &kp H  &hrm_right RIGHT_SHIFT J  &hrm_right RIGHT_GUI K  &hrm_right RALT L  &lt 3 SEMICOLON
-&kp Z  &kp X             &kp C             &kp V                   &kp B                 &kp N  &kp M                     &kp COMMA               &kp DOT            &kp SLASH
-                                           &hrm_left LCTRL ESCAPE  &kp SPACE  &lt 1 TAB         &lt 2 BACKSPACE           &hrm_right RCTRL ENTER
+&kp Q       &kp W  &kp E  &kp R                  &kp T                            &kp Y  &kp U            &kp I                   &kp O    &kp P
+&mt LALT A  &kp S  &kp D  &kp F                  &kp G                            &kp H  &kp J            &kp K                   &kp L    &lt 3 SEMICOLON
+&kp Z       &kp X  &kp C  &kp V                  &kp B                            &kp N  &kp M            &kp COMMA               &kp DOT  &kp SLASH
+                          &hrm_left LGUI ESCAPE  &mt LEFT_SHIFT SPACE  &lt 1 TAB         &lt 2 BACKSPACE  &hrm_right RCTRL ENTER
             >;
         };
 
