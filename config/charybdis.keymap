@@ -121,10 +121,10 @@
             //                ---------------- -----------
 
             bindings = <
-&kp PIPE   &kp EXCL          &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &kp MINUS    &kp PLUS    &kp EQUAL  &kp ASTERISK  &kp BACKSLASH
-&kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE                &kp COMMA    &kp PERIOD  &kp LT     &kp GT        &kp SLASH
-&kp CARET  &kp POUND         &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET              &kp PERCENT  &kp TILDE   &kp AT     &kp DOLLAR    &kp QUESTION
-                                                &trans                &trans                 &trans               &kp COLON   &kp SEMI
+&kp PIPE   &kp EXCL          &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &kp MINUS    &kp PLUS   &kp EQUAL  &kp ASTERISK  &kp BACKSLASH
+&kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE                &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT     &kp SLASH
+&kp CARET  &kp POUND         &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET              &kp PERCENT  &kp TILDE  &kp AT     &kp DOLLAR    &kp QUESTION
+                                                &trans                &trans                 &trans               &kp COLON  &kp SEMI
             >;
         };
 
@@ -148,10 +148,10 @@
             //                ---------------- -----------
 
             bindings = <
-&kp F1  &kp F5  &kp F12  &trans    &trans          &kp PAGE_UP   &kp PAGE_DOWN   &trans          &trans     &trans
-&kp N1  &kp N2  &kp N3   &kp N4    &kp N5          &kp LEFT      &kp DOWN_ARROW  &kp UP          &kp RIGHT  &trans
-&kp N6  &kp N7  &kp N8   &kp N9    &kp N0          &bt BT_SEL 0  &bt BT_SEL 1    &trans          &trans     &trans
-                         &kp LGUI  &trans  &trans                &trans          &bt BT_CLR_ALL
+&kp F1  &kp F5  &kp F12  &trans    &trans          &kp PAGE_UP   &kp PAGE_DOWN  &trans          &trans            &trans
+&kp N1  &kp N2  &kp N3   &kp N4    &kp N5          &kp PERIOD    &kp COMMA      &kp LESS_THAN   &kp GREATER_THAN  &trans
+&kp N6  &kp N7  &kp N8   &kp N9    &kp N0          &bt BT_SEL 0  &bt BT_SEL 1   &trans          &trans            &trans
+                         &kp LGUI  &trans  &trans                &trans         &bt BT_CLR_ALL
             >;
         };
 
