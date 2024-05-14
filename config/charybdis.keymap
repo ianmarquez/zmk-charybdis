@@ -86,7 +86,7 @@
         Symbols {
             bindings = <
 &kp PIPE                  &kp EXCL                      &kp AMPERSAND                 &kp LEFT_PARENTHESIS             &kp RIGHT_PARENTHESIS          &kp MINUS    &kp PLUS                     &kp EQUAL           &kp ASTERISK            &kp BACKSLASH
-&hrm_left LEFT_ALT TILDE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &hrm_left LEFT_SHIFT LEFT_BRACE  &kp RIGHT_BRACE                &kp LEFT     &hrm_right RIGHT_SHIFT DOWN  &hrm_right RGUI UP  &hrm_right RCTRL RIGHT  &hrm_right RIGHT_ALT SLASH
+&hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &hrm_left LEFT_SHIFT LEFT_BRACE  &kp RIGHT_BRACE                &kp LEFT     &hrm_right RIGHT_SHIFT DOWN  &hrm_right RGUI UP  &hrm_right RCTRL RIGHT  &hrm_right RIGHT_ALT SLASH
 &kp CARET                 &kp POUND                     &kp UNDER                     &kp LEFT_BRACKET                 &kp RIGHT_BRACKET              &kp PERCENT  &kp TILDE                    &kp AT              &kp DOLLAR              &kp QUESTION
                                                                                       &trans                           &trans                 &trans               &kp RCTRL                    &kp COLON
             >;
