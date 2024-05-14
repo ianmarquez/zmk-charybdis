@@ -57,7 +57,7 @@
          /*   optional features   */
         scroll-layers = <4>;
         // automouse-layer = <4>;
-        // snipe-layers = <1>;
+        snipe-layers = <4>;
     };
 };
 
