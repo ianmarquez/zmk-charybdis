@@ -75,24 +75,6 @@
         compatible = "zmk,keymap";
 
         BASE {
-            // ----------------------------            ---------------------------
-            // |    |    |    |     |     |  Layer 0   |    |     |    |    |    |
-            // | Q  | W  | E  |  R  |  T  |            | Y  |  U  | I  | O  | P  |
-            // |    |    |    |     |     |            |    |     |    |    |    |
-            // ----------------------------            ---------------------------
-            // |    |    |    |     |     |            |    |     |    |    |    |
-            // | A  | S  | D  |  F  |  G  |            | H  | J   | K  | L  | :  |
-            // |    |    |    |     |     |            |    |     |    |    |SHFT|
-            // ----------------------------            --------------------------
-            // |    |    |    |     |     |            |    |     |    |    |    |
-            // | Z  | X  | C  |  V  |  B  |            | N  |  M  | <, | >. | ;  |
-            // |    |    |RALT|RCMD |     |            |    |RCMD |RALT|    |CTRL|
-            // ---------------------------------  --------------------------------
-            //                |     |     |    |  |    |    |
-            //                | ESC | SPC |TAB |  |BSPC|ENT |
-            //                |LCTRL|MOUSE| L1 |  | L2 |SHFT|
-            //                ------------------  -----------
-
             bindings = <
 &kp Q             &kp W              &kp E             &kp R                   &kp T                   &kp Y  &kp U                &kp I              &kp O               &kp P
 &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                   &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &hrm_right RALT SEMI
@@ -102,51 +84,15 @@
         };
 
         Symbols {
-            // --------------------------           ----------------------------
-            // |    |    |    |    |    |  Layer 1  |    |    |    |     |     |
-            // | !  | @  | #  | $  | %  |           | ^  | &  | *  | (   | )   |
-            // |    |    |    |    |    |           |    |    |    |     |     |
-            // --------------------------           ---------------------------
-            // |    |    |    |    |    |           |    |    |    |     |     |
-            // |    | ~  | `  | [  | ]  |           |LEFT|DOWN| UP |RIGHT|     |
-            // |    |    |    |    |    |           |    |    |    |     |     |
-            // --------------------------           ---------------------------
-            // |    |    |    |    |    |           |    |    |    |     |     |
-            // |    | ?  | /  | {  | }  |           | '  | "  | :  |  ;  |     |
-            // |    |    |    |    |    |           |    |    |    |     |     |
-            // ------------------------------- ---------------------------------
-            //                |    |    |/||\| |    |    |
-            //                |    |    |HOLD| | -  | =  |
-            //                |    |    |\||/| |    |    |
-            //                ---------------- -----------
-
             bindings = <
 &kp PIPE   &kp EXCL          &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &kp MINUS    &kp PLUS   &kp EQUAL  &kp ASTERISK  &kp BACKSLASH
 &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE                &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT     &kp SLASH
 &kp CARET  &kp POUND         &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET              &kp PERCENT  &kp TILDE  &kp AT     &kp DOLLAR    &kp QUESTION
-                                                &trans                &trans                 &trans               &kp COLON  &kp SEMI
+                                                &trans                &trans                 &trans               &kp SEMI  &kp COLON
             >;
         };
 
         Numbers {
-            // --------------------------           ---------------------------
-            // |    |    |    |    |    |  Layer 2  |    |    |    |    |     |
-            // |    |    | 7  | 8  | 9  |           | F1 | F2 | F3 | F4 | F5  |
-            // |    |    |    |    |    |           |    |    |    |    |     |
-            // --------------------------           ---------------------------
-            // |    |    |    |    |    |           |    |    |    |    |     |
-            // |    |    | 4  | 5  | 6  |           | F6 | F7 | F8 | F9 | F10 |
-            // |    |    |    |    |    |           |    |    |    |    |     |
-            // --------------------------           ---------------------------
-            // |    |    |    |    |    |           |    |    |    |    |     |
-            // |    |    | 1  | 2  | 3  |           |F11 |F12 |BT1 |BT2 |BTCLR|
-            // |    |    |    |    |    |           |    |    |    |    |     |
-            // ------------------------------- --------------------------------
-            //                |    |    |    | |/||\|    |
-            //                | 0  |    |    | |HOLD|    |
-            //                |    |    |    | |\||/|    |
-            //                ---------------- -----------
-
             bindings = <
 &kp N1    &kp N2     &kp N3    &kp N4     &kp N5                &kp N6        &kp N7           &kp N8    &kp N9     &kp N0
 &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK          &trans        &kp RIGHT_SHIFT  &kp RGUI  &kp RCTRL  &kp RALT
@@ -156,24 +102,6 @@
         };
 
         Mouse {
-            // --------------------------           --------------------------
-            // |    |    |    |    |    |  Layer 3  |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |    |SCUP|    |    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // --------------------------           --------------------------
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |LCLK|MCLK|RCLK|    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // --------------------------           --------------------------
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |    |SCDN|    |    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // ------------------------------- -------------------------------
-            //                |    |/||\|    | |    |    |
-            //                |    |HOLD|    | |    |    |
-            //                |    |\||/|    | |    |    |
-            //                ---------------- -----------
-
             bindings = <
 &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans          &trans          &trans  &trans     &trans            &trans     &trans
 &kp LALT    &kp LCTRL          &kp LGUI         &kp LEFT_SHIFT  &trans          &trans  &mkp LCLK  &mkp MCLK         &mkp RCLK  &trans
@@ -183,24 +111,6 @@
         };
 
         Scroll {
-            // --------------------------           --------------------------
-            // |    |    |    |    |    |  Layer 4  |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // --------------------------           --------------------------
-            // |    |    |    |/||\|    |           |    |    |    |    |    |
-            // |    |    |    |HOLD|    |           |    |    |    |    |    |
-            // |    |    |    |\||/|    |           |    |    |    |    |    |
-            // --------------------------           --------------------------
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // |    |    |    |    |    |           |    |    |    |    |    |
-            // ------------------------------- -------------------------------
-            //                |    |/||\|    | |    |    |
-            //                |    |HOLD|    | |    |    |
-            //                |    |\||/|    | |    |    |
-            //                ---------------- -----------
-
             bindings = <
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
