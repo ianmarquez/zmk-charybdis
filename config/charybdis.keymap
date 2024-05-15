@@ -103,10 +103,10 @@
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans          &trans          &trans  &trans     &trans            &trans     &trans
-&kp LALT    &kp LCTRL          &kp LGUI         &kp LEFT_SHIFT  &trans          &trans  &mkp LCLK  &mkp MCLK         &mkp RCLK  &trans
-&trans      &kp LG(X)          &kp LG(C)        &kp LG(V)       &trans          &trans  &mo 4      &kp LC(UP_ARROW)  &kp F11    &trans
-                                                &trans          &trans  &trans          &trans     &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans          &trans          &trans  &trans     &trans      &trans     &trans
+&kp LALT    &kp LCTRL          &kp LGUI         &kp LEFT_SHIFT  &trans          &trans  &mkp LCLK  &mo 4       &mkp RCLK  &trans
+&trans      &kp LG(X)          &kp LG(C)        &kp LG(V)       &trans          &trans  &trans     &trans      &trans     &trans
+                                                &trans          &trans  &trans          &kp F11    &kp RC(UP)
             >;
         };
 
