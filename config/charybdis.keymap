@@ -79,7 +79,7 @@
 &kp Q             &kp W              &kp E             &kp R                   &kp T                   &kp Y  &kp U                &kp I              &kp O               &kp P
 &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                   &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &hrm_right RALT SEMI
 &kp Z             &kp X              &kp C             &lt 3 V                 &kp B                   &kp N  &lt 4 M              &kp COMMA          &kp PERIOD          &kp SLASH
-                                                       &mt LSHIFT ESC          &lt 1 SPACE  &lt 3 TAB         &mt RCTRL ENTER      &lt 2 BACKSPACE
+                                                       &mt LSHIFT ESC          &lt 1 TAB  &lt 3 SPACE         &mt RCTRL ENTER      &lt 2 BACKSPACE
             >;
         };
 
