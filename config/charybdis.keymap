@@ -94,10 +94,10 @@
 
         Numbers {
             bindings = <
-&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
-&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&trans    &trans     &trans    &trans     &trans                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL
-                               &kp F1     &kp F5        &kp F12                &trans        &trans
+&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6        &kp N7                &kp N8             &kp N9           &kp N0
+&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT      &mt RIGHT_SHIFT DOWN  &mt RCMD UP_ARROW  &mt RCTRL RIGHT  &kp RIGHT_ALT
+&trans    &trans     &trans    &trans     &trans                 &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_CLR_ALL
+                               &kp F1     &kp F5        &kp F12                &trans                &trans
             >;
         };
 
