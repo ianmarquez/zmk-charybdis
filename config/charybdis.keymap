@@ -94,16 +94,16 @@
 
         Numbers {
             bindings = <
-&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6        &kp N7                &kp N8             &kp N9           &kp N0
-&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT      &mt RIGHT_SHIFT DOWN  &mt RCMD UP_ARROW  &mt RCTRL RIGHT  &kp RIGHT_ALT
-&trans    &trans     &trans    &trans     &trans                 &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_CLR_ALL
-                               &kp F1     &kp F5        &kp F12                &trans                &trans
+&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6      &kp N7                &kp N8             &kp N9           &kp N0
+&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT    &mt RIGHT_SHIFT DOWN  &mt RCMD UP_ARROW  &mt RCTRL RIGHT  &kp RIGHT_ALT
+&kp F2    &kp F11    &kp F10   &trans     &trans                 &kp DELETE  &trans                &trans             &trans           &trans
+                               &kp F1     &kp F5        &kp F12              &trans                &trans
             >;
         };
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none           &none         &none  &none      &none       &none  &none
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none           &mo 5         &none  &none      &none       &none  &none
 &kp LALT    &kp LCTRL          &kp LGUI         &kp LEFT_SHIFT  &none         &none  &mkp LCLK  &mkp RCLK   &none  &none
 &none       &kp LG(X)          &kp LG(C)        &kp LG(V)       &none         &none  &mo 4      &none       &none  &none
                                                 &none           &none  &none         &kp F11    &kp RC(UP)
@@ -116,6 +116,15 @@
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans          &trans  &trans
+            >;
+        };
+
+        keyboard_controls {
+            bindings = <
+&bootloader  &sys_reset  &trans  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans       &trans      &trans  &trans  &trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans
+&trans       &trans      &trans  &trans  &trans          &trans        &trans          &trans        &trans        &trans
+                                 &trans  &trans  &trans                &trans          &trans
             >;
         };
     };
