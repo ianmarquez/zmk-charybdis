@@ -79,6 +79,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <11 10>;
         };
+
+        Tab_combo {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
