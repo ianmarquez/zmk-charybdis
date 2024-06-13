@@ -103,7 +103,7 @@
 &kp PIPE                  &kp EXCL                      &kp AMPERSAND                 &kp MINUS                       &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp PLUS                             &kp EQUAL               &kp ASTERISK            &kp BACKSLASH
 &hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &hrm_left LEFT_SHIFT LESS_THAN  &kp LEFT_BRACE                &kp RIGHT_BRACE        &hrm_right RIGHT_SHIFT GREATER_THAN  &hrm_right RGUI PERIOD  &hrm_right RCTRL COMMA  &hrm_right RIGHT_ALT SLASH
 &kp CARET                 &kp POUND                     &kp UNDER                     &kp PERCENT                     &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp TILDE                            &kp AT                  &kp DOLLAR              &kp QUESTION
-                                                                                      &trans                          &trans                &trans                         &kp SEMI                             &kp COLON
+                                                                                      &trans                          &trans                &trans                         &trans                               &trans
             >;
         };
 
