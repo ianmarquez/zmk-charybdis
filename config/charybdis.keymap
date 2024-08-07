@@ -88,14 +88,6 @@
             bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
         };
 
-        tapdance_questionmark: tapdance_questionmark {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_QUESTIONMARK";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp QUESTION>, <&kp BACKSLASH>;
-        };
-
         tapdance_grave: tapdance_grave {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_GRAVE";
@@ -157,10 +149,10 @@
 
         Symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN       &tapdance_or_and  &kp DOLLAR  &tapdance_parens          &tapdance_multi_div     &kp N7  &kp N8  &kp N9  &kp N0
-&tapdance_grave  &tapdance_quotes  &kp MINUS         &kp PLUS    &tapdance_curly           &tapdance_gt            &kp N4  &kp N5  &kp N6  &kp PERCENT
-&kp CARET        &kp POUND         &kp UNDER         &kp EQUAL   &tapdance_square          &tapdance_questionmark  &kp N1  &kp N2  &kp N3  &trans
-                                                     &trans      &trans            &trans                          &trans  &trans
+&kp EXCLAMATION  &kp AT_SIGN       &tapdance_or_and  &kp DOLLAR  &tapdance_parens          &tapdance_multi_div  &kp N7  &kp N8  &kp N9  &kp N0
+&tapdance_grave  &tapdance_quotes  &kp MINUS         &kp PLUS    &tapdance_curly           &tapdance_gt         &kp N4  &kp N5  &kp N6  &trans
+&kp CARET        &kp POUND         &kp UNDER         &kp EQUAL   &tapdance_square          &kp PERCENT          &kp N1  &kp N2  &kp N3  &trans
+                                                     &trans      &trans            &trans                       &trans  &trans
             >;
         };
 
