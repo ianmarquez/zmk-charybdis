@@ -7,14 +7,14 @@
 #define U_TAPPING_TERM 200
 
 &mt {
-    tapping-term-ms = <250>;
-    quick-tap-ms = <250>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
     flavor = "tap-preferred";
 };
 
 &lt {
-    tapping-term-ms = <250>;
-    quick-tap-ms = <250>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
 };
 
 / {
