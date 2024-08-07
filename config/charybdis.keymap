@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_PARENS";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_CURLY";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
 
@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_SQUARE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_GT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
         };
 
@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_GRAVE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
@@ -100,7 +100,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_QUOTES";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
 
@@ -108,7 +108,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_OR_AND";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp AMPERSAND>, <&kp PIPE>;
         };
 
@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_MULTI_DIV";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp ASTERISK>, <&kp SLASH>;
         };
     };
