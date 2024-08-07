@@ -55,6 +55,38 @@
 
             tapping-term-ms = <100>;
         };
+
+        tapdance_parens: tapdance_parens {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_PARENS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        tapdance_curly: tapdance_curly {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_CURLY";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+
+        tapdance_square: tapdance_square {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_SQUARE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        };
+
+        tapdance_gt: tapdance_gt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_GT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+        };
     };
 
     combos {
@@ -100,10 +132,10 @@
 
         Symbols {
             bindings = <
-&kp PIPE                  &kp EXCL                      &kp AMPERSAND                 &kp MINUS                       &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp PLUS                             &kp EQUAL               &kp ASTERISK            &kp SLASH
-&hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &hrm_left LEFT_SHIFT LESS_THAN  &kp LEFT_BRACE                &kp RIGHT_BRACE        &hrm_right RIGHT_SHIFT GREATER_THAN  &hrm_right RGUI PERIOD  &hrm_right RCTRL COMMA  &hrm_right RIGHT_ALT BACKSLASH
-&kp CARET                 &kp POUND                     &kp UNDER                     &kp PERCENT                     &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp TILDE                            &kp AT                  &kp DOLLAR              &kp QUESTION
-                                                                                      &trans                          &trans                &trans                         &trans                               &trans
+&kp EXCLAMATION           &kp PIPE                      &kp AMPERSAND                 &kp DOLLAR      &tapdance_parens          &kp MINUS     &kp PLUS          &kp EQUAL               &kp ASTERISK            &kp SLASH
+&hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &kp LEFT_SHIFT  &tapdance_curly           &tapdance_gt  &kp RIGHT_SHIFT   &hrm_right RGUI PERIOD  &hrm_right RCTRL COMMA  &hrm_right RIGHT_ALT BACKSLASH
+&kp CARET                 &kp POUND                     &kp UNDER                     &kp PERCENT     &tapdance_square          &kp QUESTION  &kp TILDE         &kp AT                  &trans                  &trans
+                                                                                      &trans          &trans            &trans                &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
             >;
         };
 
