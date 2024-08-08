@@ -125,16 +125,9 @@
             label = "TAPDANCE_TAB_MOUSELAYER";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp TAB>, <&mo 3>;
-        };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
             bindings = <&mo 3>, <&kp TAB>;
         };
+
     };
 
     combos {
