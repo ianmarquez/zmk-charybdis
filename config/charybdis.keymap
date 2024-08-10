@@ -158,7 +158,7 @@
         Symbols {
             bindings = <
 &kp N1     &kp N2            &kp N3                    &kp N4                     &kp N5                    &kp N6    &kp N7                        &kp N8                    &kp N9     &kp N0
-&kp GRAVE  &kp SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT PLUS  &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN_ARROW  &hrm_right LCMD UP_ARROW  &kp RIGHT  &kp PIPE
+&kp GRAVE  &kp SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT EQUAL &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN_ARROW  &hrm_right LCMD UP_ARROW  &kp RIGHT  &kp PIPE
 &kp F1     &kp F12           &tapdance_gt              &tapdance_parens           &tapdance_square          &trans    &none                         &trans                    &trans     &trans
                                                        &trans                     &trans            &trans            &trans                        &trans
             >;
