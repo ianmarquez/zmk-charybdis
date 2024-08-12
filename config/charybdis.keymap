@@ -119,12 +119,12 @@
             bindings = <&hrm_left LEFT_GUI MINUS>, <&kp UNDERSCORE>;
         };
 
-        tapdance_plus_equals: tapdance_plus_equals {
+        tapdance_equals_plus: tapdance_equals_plus {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_PLUS_EQUALS";
+            label = "TAPDANCE_EQUALS_PLUS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&hrm_left LEFT_SHIFT PLUS>, <&kp EQUAL>;
+            bindings = <&hrm_left LEFT_SHIFT EQUAL>, <&kp PLUS>;
         };
 
         tapdance_1: tapdance_1 {
@@ -245,7 +245,7 @@
         Symbols_Navigation {
             bindings = <
 &tapdance_1      &tapdance_2       &tapdance_3                 &tapdance_4            &tapdance_5               &tapdance_6  &tapdance_7             &tapdance_8                    &tapdance_9  &tapdance_0
-&tapdance_grave  &tapdance_quotes  &tapdance_minus_underscore  &tapdance_plus_equals  &tapdance_curly           &kp LEFT     &hrm_right RSHIFT DOWN  &hrm_right RIGHT_GUI UP_ARROW  &kp RIGHT    &trans
+&tapdance_grave  &tapdance_quotes  &tapdance_minus_underscore  &tapdance_equals_plus  &tapdance_curly           &kp LEFT     &hrm_right RSHIFT DOWN  &hrm_right RIGHT_GUI UP_ARROW  &kp RIGHT    &trans
 &kp F1           &kp F12           &tapdance_pipe_backslash    &tapdance_parens       &tapdance_square          &trans       &none                   &trans                         &trans       &trans
                                                                &trans                 &trans            &trans               &trans                  &trans
             >;
