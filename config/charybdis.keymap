@@ -127,20 +127,92 @@
             bindings = <&hrm_left LEFT_SHIFT PLUS>, <&kp EQUAL>;
         };
 
-        tapdance_down_pagedown: tapdance_down_pagedown {
+        tapdance_1: tapdance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_DOWN_PAGEDOWN";
+            label = "TAPDANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&hrm_right RIGHT_SHIFT DOWN_ARROW>, <&kp LC(D)>;
+            bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>;
         };
 
-        tapdance_up_pageup: tapdance_up_pageup {
+        tapdance_2: tapdance_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_UP_PAGEUP";
+            label = "TAPDANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&hrm_right RIGHT_GUI UP_ARROW>, <&kp LC(UP_ARROW)>;
+            bindings = <&kp NUMBER_2>, <&kp AT_SIGN>;
+        };
+
+        tapdance_3: tapdance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_3>, <&kp HASH>;
+        };
+
+        tapdance_4: tapdance_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_4";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_4>, <&kp DOLLAR>;
+        };
+
+        tapdance_5: tapdance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_5";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_5>, <&kp PERCENT>;
+        };
+
+        tapdance_6: tapdance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_6";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_6>, <&kp CARET>;
+        };
+
+        tapdance_7: tapdance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_7";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_7>, <&kp AMPERSAND>;
+        };
+
+        tapdance_8: tapdance_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_8";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_8>, <&kp ASTERISK>;
+        };
+
+        tapdance_9: tapdance_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_9";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_9>, <&kp LEFT_PARENTHESIS>;
+        };
+
+        tapdance_0: tapdance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        tapdance_pipe_backslash: tapdance_pipe_backslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_PIPE_BACKSLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp PIPE>, <&kp BACKSLASH>;
         };
     };
 
@@ -172,10 +244,10 @@
 
         Symbols_Navigation {
             bindings = <
-&kp N1           &kp N2            &kp N3                      &kp N4                 &kp N5                    &kp N6    &kp N7                  &kp N8                         &kp N9     &kp N0
-&tapdance_grave  &tapdance_quotes  &tapdance_minus_underscore  &tapdance_plus_equals  &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN  &hrm_right RIGHT_GUI UP_ARROW  &kp RIGHT  &kp PIPE
-&kp F1           &kp F12           &trans                      &tapdance_parens       &tapdance_square          &trans    &none                   &trans                         &trans     &trans
-                                                               &trans                 &trans            &trans            &trans                  &trans
+&tapdance_1      &tapdance_2       &tapdance_3                 &tapdance_4            &tapdance_5               &tapdance_6  &tapdance_7             &tapdance_8                    &tapdance_9  &tapdance_0
+&tapdance_grave  &tapdance_quotes  &tapdance_minus_underscore  &tapdance_plus_equals  &tapdance_curly           &kp LEFT     &hrm_right RSHIFT DOWN  &hrm_right RIGHT_GUI UP_ARROW  &kp RIGHT    &trans
+&kp F1           &kp F12           &tapdance_pipe_backslash    &tapdance_parens       &tapdance_square          &trans       &none                   &trans                         &trans       &trans
+                                                               &trans                 &trans            &trans               &trans                  &trans
             >;
         };
 
