@@ -253,7 +253,7 @@
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans          &trans  &trans     &trans            &trans  &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 4           &trans  &trans     &trans            &trans  &trans
 &trans      &trans             &trans           &trans  &trans          &trans  &mkp LCLK  &mkp RCLK         &trans  &trans
 &trans      &trans             &trans           &trans  &trans          &trans  &trans     &trans            &trans  &trans
                                                 &trans  &trans  &trans          &kp F11    &kp RC(UP_ARROW)
