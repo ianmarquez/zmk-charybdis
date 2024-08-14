@@ -116,10 +116,10 @@
 
         Symbols {
             bindings = <
-&kp EXCL                  &kp AT                        &kp POUND                 &kp DOLLAR                  &tapdance_parens          &kp RIGHT_PARENTHESIS  &kp PERCENT              &kp CARET                  &kp AMPS           &kp PIPE
-&hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT EQUAL  &tapdance_curly           &kp RIGHT_BRACE        &hrm_right RSHIFT UNDER  &hrm_right RIGHT_GUI PLUS  &kp DOUBLE_QUOTES  &kp TILDE
-&none                     &none                         &trans                    &kp PERCENT                 &tapdance_square          &kp RIGHT_BRACKET      &kp BACKSLASH            &trans                     &trans             &trans
-                                                                                  &trans                      &trans            &trans                         &trans                   &trans
+&kp EXCL                  &kp AT                        &kp POUND                    &kp DOLLAR                    &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp PERCENT              &kp CARET                      &kp AMPS           &kp PIPE
+&hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LEFT_GUI KP_MINUS  &hrm_left LEFT_SHIFT KP_PLUS  &kp LEFT_BRACE                &kp RIGHT_BRACE        &hrm_right RSHIFT UNDER  &hrm_right RIGHT_GUI KP_EQUAL  &kp DOUBLE_QUOTES  &kp TILDE
+&none                     &none                         &trans                       &kp PERCENT                   &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp BACKSLASH            &trans                         &trans             &trans
+                                                                                     &trans                        &trans                &trans                         &trans                   &trans
             >;
         };
 
