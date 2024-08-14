@@ -71,36 +71,12 @@
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
-        tapdance_gt: tapdance_gt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_GT";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
-        };
-
-        tapdance_grave: tapdance_grave {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_GRAVE";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp GRAVE>, <&kp TILDE>;
-        };
-
-        tapdance_quotes: tapdance_quotes {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_QUOTES";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
-        };
-
         tapdance_tab_mouselayer: tapdance_tab_mouselayer {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_TAB_MOUSELAYER";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&mo 2>, <&kp TAB>;
+            bindings = <&mo 3>, <&kp TAB>;
         };
 
         tapdance_z_capslock: tapdance_z_capslock {
@@ -110,117 +86,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp Z>, <&kp CAPSLOCK>;
         };
-
-        tapdance_minus_underscore: tapdance_minus_underscore {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_MINUS_UNDERSCORE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&hrm_left LEFT_GUI MINUS>, <&kp UNDERSCORE>;
-        };
-
-        tapdance_equals_plus: tapdance_equals_plus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_EQUALS_PLUS";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&hrm_left LEFT_SHIFT EQUAL>, <&kp PLUS>;
-        };
-
-        tapdance_1: tapdance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>;
-        };
-
-        tapdance_2: tapdance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_2>, <&kp AT_SIGN>;
-        };
-
-        tapdance_3: tapdance_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_3";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_3>, <&kp HASH>;
-        };
-
-        tapdance_4: tapdance_4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_4";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_4>, <&kp DOLLAR>;
-        };
-
-        tapdance_5: tapdance_5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_5";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_5>, <&kp PERCENT>;
-        };
-
-        tapdance_6: tapdance_6 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_6";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_6>, <&kp CARET>;
-        };
-
-        tapdance_7: tapdance_7 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_7";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_7>, <&kp AMPERSAND>;
-        };
-
-        tapdance_8: tapdance_8 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_8";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_8>, <&kp ASTERISK>;
-        };
-
-        tapdance_9: tapdance_9 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_9";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_9>, <&kp LEFT_PARENTHESIS>;
-        };
-
-        tapdance_0: tapdance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
-        };
-
-        tapdance_pipe_backslash: tapdance_pipe_backslash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_PIPE_BACKSLASH";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp PIPE>, <&kp BACKSLASH>;
-        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         toggle_mouse_layer {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <33 9>;
         };
 
@@ -237,23 +109,32 @@
             bindings = <
 &kp Q                 &kp W              &kp E             &kp R                   &kp T                                  &kp Y  &kp U                &kp I              &kp O               &kp P
 &hrm_left LALT A      &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &kp SEMI
-&tapdance_z_capslock  &kp X              &kp C             &kp V                   &kp B                                  &kp N  &lt 3 M              &kp COMMA          &kp PERIOD          &lt 4 SLASH
-                                                           &mt LSHIFT ESCAPE       &lt 1 SPACE  &tapdance_tab_mouselayer         &mt RCTRL ENTER      &lt 1 BACKSPACE
+&tapdance_z_capslock  &kp X              &kp C             &kp V                   &kp B                                  &kp N  &lt 4 M              &kp COMMA          &kp PERIOD          &lt 5 SLASH
+                                                           &mt LSHIFT ESCAPE       &lt 1 SPACE  &tapdance_tab_mouselayer         &mt RCTRL ENTER      &lt 2 BACKSPACE
             >;
         };
 
-        Symbols_Navigation {
+        Symbols {
             bindings = <
-&tapdance_1      &tapdance_2       &tapdance_3                 &tapdance_4            &tapdance_5               &tapdance_6  &tapdance_7             &tapdance_8                    &tapdance_9  &tapdance_0
-&tapdance_grave  &tapdance_quotes  &tapdance_minus_underscore  &tapdance_equals_plus  &tapdance_curly           &kp LEFT     &hrm_right RSHIFT DOWN  &hrm_right RIGHT_GUI UP_ARROW  &kp RIGHT    &trans
-&kp F1           &kp F12           &tapdance_pipe_backslash    &tapdance_parens       &tapdance_square          &trans       &none                   &trans                         &trans       &trans
-                                                               &trans                 &trans            &trans               &trans                  &trans
+&kp EXCL                  &kp AT                        &kp POUND                 &kp DOLLAR                  &tapdance_parens          &kp RIGHT_PARENTHESIS  &kp PERCENT              &kp CARET                  &kp AMPS           &kp PIPE
+&hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT EQUAL  &tapdance_curly           &kp RIGHT_BRACE        &hrm_right RSHIFT UNDER  &hrm_right RIGHT_GUI PLUS  &kp DOUBLE_QUOTES  &kp TILDE
+&none                     &none                         &trans                    &kp PERCENT                 &tapdance_square          &kp RIGHT_BRACKET      &kp BACKSLASH            &trans                     &trans             &trans
+                                                                                  &trans                      &trans            &trans                         &trans                   &trans
+            >;
+        };
+
+        Navigation_numbers {
+            bindings = <
+&kp N1    &kp N2     &kp N3    &kp N4     &kp N5            &kp N6    &kp N7                       &kp N8                       &kp N9                  &kp N0
+&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp TAB           &kp LEFT  &hrm_right RIGHT_SHIFT DOWN  &hrm_right RIGHT_COMMAND UP  &hrm_right RCTRL RIGHT  &kp RIGHT_ALT
+&trans    &trans     &trans    &trans     &trans            &trans    &trans                       &trans                       &trans                  &trans
+                               &kp F1     &kp F5   &kp F12            &trans                       &trans
             >;
         };
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 4           &trans  &trans     &trans            &trans  &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5           &trans  &trans     &trans            &trans  &trans
 &trans      &trans             &trans           &trans  &trans          &trans  &mkp LCLK  &mkp RCLK         &trans  &trans
 &trans      &trans             &trans           &trans  &trans          &trans  &trans     &trans            &trans  &trans
                                                 &trans  &trans  &trans          &kp F11    &kp RC(UP_ARROW)
