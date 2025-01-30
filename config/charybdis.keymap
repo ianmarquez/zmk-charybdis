@@ -125,16 +125,15 @@
             label = "TAPDANCE_TAB_MOUSELAYER";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&mo 3>, <&kp TAB>;
+            bindings = <&mo 2>, <&kp TAB>;
         };
-
     };
 
     combos {
         compatible = "zmk,combos";
 
         toggle_mouse_layer {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <33 9>;
         };
 
@@ -151,34 +150,25 @@
             bindings = <
 &kp Q             &kp W              &kp E             &kp R                   &kp T                                  &kp Y  &kp U                &kp I              &kp O               &kp P
 &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &kp SEMI
-&kp Z             &kp X              &kp C             &kp V                   &kp B                                  &kp N  &lt 4 M              &kp COMMA          &kp PERIOD          &kp SLASH
-                                                       &mt LSHIFT ESCAPE       &lt 1 SPACE  &tapdance_tab_mouselayer         &mt RCTRL ENTER      &lt 2 BACKSPACE
+&kp Z             &kp X              &kp C             &kp V                   &kp B                                  &kp N  &lt 3 M              &kp COMMA          &kp PERIOD          &kp SLASH
+                                                       &mt LSHIFT ESCAPE       &lt 1 SPACE  &tapdance_tab_mouselayer         &mt RCTRL ENTER      &kp BACKSPACE
             >;
         };
 
         Symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN       &tapdance_or_and  &kp DOLLAR  &tapdance_parens          &tapdance_multi_div  &kp N7  &kp N8  &kp N9  &trans
-&tapdance_grave  &tapdance_quotes  &kp MINUS         &kp PLUS    &tapdance_curly           &tapdance_gt         &kp N4  &kp N5  &kp N6  &kp N0
-&kp CARET        &kp POUND         &kp UNDER         &kp EQUAL   &tapdance_square          &kp PERCENT          &kp N1  &kp N2  &kp N3  &trans
-                                                     &trans      &trans            &trans                       &trans  &trans
-            >;
-        };
-
-        Navigation {
-            bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5           &trans      &trans          &trans        &trans     &kp BACKSPACE
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10          &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&kp F11  &kp F12  &trans  &trans  &trans           &kp DELETE  &trans          &trans        &trans     &trans
-                          &trans  &trans   &trans              &trans          &trans
+&kp N1     &kp N2            &kp N3                    &kp N4                     &kp N5                    &kp N6    &kp N7                        &kp N8                    &kp N9     &kp N0
+&kp GRAVE  &kp SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT PLUS  &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN_ARROW  &hrm_right LCMD UP_ARROW  &kp RIGHT  &kp PIPE
+&kp F1     &kp F12           &tapdance_gt              &tapdance_parens           &tapdance_square          &trans    &none                         &trans                    &trans     &trans
+                                                       &trans                     &trans            &trans            &trans                        &trans
             >;
         };
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none           &mo 5         &none  &none      &none       &none  &none
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none           &mo 4         &none  &none      &none       &none  &none
 &kp LALT    &kp LCTRL          &kp LGUI         &kp LEFT_SHIFT  &none         &none  &mkp LCLK  &mkp RCLK   &none  &none
-&none       &kp LG(X)          &kp LG(C)        &kp LG(V)       &none         &none  &mo 4      &none       &none  &none
+&none       &kp LG(X)          &kp LG(C)        &kp LG(V)       &none         &none  &mo 3      &none       &none  &none
                                                 &none           &none  &none         &kp F11    &kp RC(UP)
             >;
         };
