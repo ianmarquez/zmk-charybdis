@@ -85,10 +85,10 @@
 
         Symbols {
             bindings = <
-&kp PIPE   &kp EXCL          &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &kp MINUS    &kp PLUS   &kp EQUAL  &kp ASTERISK  &kp BACKSLASH
-&kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE                &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT     &kp SLASH
-&kp CARET  &kp POUND         &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET              &kp PERCENT  &kp TILDE  &kp AT     &kp DOLLAR    &kp QUESTION
-                                                &trans                &trans                 &trans               &kp SEMI  &kp COLON
+&kp PIPE                  &kp EXCL                      &kp AMPERSAND                 &kp LEFT_PARENTHESIS             &kp RIGHT_PARENTHESIS          &kp MINUS    &kp PLUS                     &kp EQUAL           &kp ASTERISK            &kp BACKSLASH
+&hrm_left LEFT_ALT TILDE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &hrm_left LEFT_SHIFT LEFT_BRACE  &kp RIGHT_BRACE                &kp LEFT     &hrm_right RIGHT_SHIFT DOWN  &hrm_right RGUI UP  &hrm_right RCTRL RIGHT  &hrm_right RIGHT_ALT SLASH
+&kp CARET                 &kp POUND                     &kp UNDER                     &kp LEFT_BRACKET                 &kp RIGHT_BRACKET              &kp PERCENT  &kp TILDE                    &kp AT              &kp DOLLAR              &kp QUESTION
+                                                                                      &trans                           &trans                 &trans               &kp RCTRL                    &kp COLON
             >;
         };
 
