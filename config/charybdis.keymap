@@ -47,15 +47,6 @@
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34>;
         };
 
-        hold_shift: hold_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "HOLD_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT>, <&kp CLCK>;
-
-            tapping-term-ms = <100>;
-        };
-
         tapdance_parens: tapdance_parens {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_PARENS";
@@ -104,28 +95,20 @@
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
 
-        tapdance_or_and: tapdance_or_and {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_OR_AND";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp AMPERSAND>, <&kp PIPE>;
-        };
-
-        tapdance_multi_div: tapdance_multi_div {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_MULTI_DIV";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp ASTERISK>, <&kp SLASH>;
-        };
-
         tapdance_tab_mouselayer: tapdance_tab_mouselayer {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_TAB_MOUSELAYER";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&mo 2>, <&kp TAB>;
+        };
+
+        tapdance_z_capslock: tapdance_z_capslock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_Z_CAPSLOCK";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Z>, <&kp CAPSLOCK>;
         };
     };
 
@@ -148,28 +131,28 @@
 
         BASE {
             bindings = <
-&kp Q             &kp W              &kp E             &kp R                   &kp T                                  &kp Y  &kp U                &kp I              &kp O               &kp P
-&hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &kp SEMI
-&kp Z             &kp X              &kp C             &kp V                   &kp B                                  &kp N  &lt 3 M              &kp COMMA          &kp PERIOD          &lt 4 SLASH
-                                                       &mt LSHIFT ESCAPE       &lt 1 SPACE  &tapdance_tab_mouselayer         &mt RCTRL ENTER      &kp BACKSPACE
+&kp Q                 &kp W              &kp E             &kp R                   &kp T                                  &kp Y  &kp U                &kp I              &kp O               &kp P
+&hrm_left LALT A      &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &kp SEMI
+&tapdance_z_capslock  &kp X              &kp C             &kp V                   &kp B                                  &kp N  &lt 3 M              &kp COMMA          &kp PERIOD          &lt 4 SLASH
+                                                           &mt LSHIFT ESCAPE       &lt 1 SPACE  &tapdance_tab_mouselayer         &mt RCTRL ENTER      &lt 1 BACKSPACE
             >;
         };
 
-        Symbols {
+        Symbols_Navigation {
             bindings = <
-&kp N1     &kp N2            &kp N3                    &kp N4                     &kp N5                    &kp N6    &kp N7                        &kp N8                    &kp N9     &kp N0
-&kp GRAVE  &kp SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT EQUAL &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN_ARROW  &hrm_right LCMD UP_ARROW  &kp RIGHT  &kp PIPE
-&kp F1     &kp F12           &tapdance_gt              &tapdance_parens           &tapdance_square          &trans    &none                         &trans                    &trans     &trans
-                                                       &trans                     &trans            &trans            &trans                        &trans
+&kp N1     &kp N2            &kp N3                    &kp N4                      &kp N5                    &kp N6    &kp N7                        &kp N8                    &kp N9     &kp N0
+&kp GRAVE  &kp SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT EQUAL  &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN_ARROW  &hrm_right LCMD UP_ARROW  &kp RIGHT  &kp PIPE
+&kp F1     &kp F12           &trans                    &tapdance_parens            &tapdance_square          &trans    &none                         &trans                    &trans     &trans
+                                                       &trans                      &trans            &trans            &trans                        &trans
             >;
         };
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans         &trans  &trans      &trans           &trans    &trans
-&trans      &trans             &trans           &trans  &trans         &trans  &mkp LCLK   &mkp RCLK        &trans    &trans
-&trans      &trans             &trans           &trans  &trans         &trans  &trans      &trans           &trans    &trans
-                                                &trans  &trans  &trans         &kp F11     &kp RC(UP_ARROW)
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans          &trans  &trans     &trans            &trans  &trans
+&trans      &trans             &trans           &trans  &trans          &trans  &mkp LCLK  &mkp RCLK         &trans  &trans
+&trans      &trans             &trans           &trans  &trans          &trans  &trans     &trans            &trans  &trans
+                                                &trans  &trans  &trans          &kp F11    &kp RC(UP_ARROW)
             >;
         };
 
