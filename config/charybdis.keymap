@@ -175,10 +175,10 @@
             //                ---------------- -----------
 
             bindings = <
-&trans    &trans     &trans     &trans          &kp C_VOLUME_UP            &trans  &trans     &trans            &trans     &trans
-&kp LALT  &kp LCTRL  &kp LGUI   &kp LEFT_SHIFT  &kp C_VOLUME_DOWN          &mo 4   &mkp LCLK  &mkp MCLK         &mkp RCLK  &trans
-&trans    &kp LG(X)  &kp LG(C)  &kp LG(V)       &kp K_MUTE                 &trans  &trans     &kp LC(UP_ARROW)  &trans     &trans
-                                &trans          &trans             &trans          &trans     &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans          &trans          &trans  &trans     &trans            &trans     &trans
+&kp LALT    &kp LCTRL          &kp LGUI         &kp LEFT_SHIFT  &trans          &mo 4   &mkp LCLK  &mkp MCLK         &mkp RCLK  &trans
+&trans      &kp LG(X)          &kp LG(C)        &kp LG(V)       &trans          &trans  &trans     &kp LC(UP_ARROW)  &trans     &trans
+                                                &trans          &trans  &trans          &trans     &trans
             >;
         };
 
