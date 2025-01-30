@@ -12,6 +12,11 @@
     flavor = "tap-preferred";
 };
 
+&lt {
+    tapping-term-ms = <250>;
+    quick-tap-ms = <250>;
+};
+
 / {
     chosen { zmk,matrix_transform = &default_transform; };
 };
