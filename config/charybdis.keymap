@@ -153,8 +153,8 @@
 
             bindings = <
 &none     &none      &none      &none      &kp C_VOLUME_UP           &none             &mo 4      &none      &none  &none
-&kp LALT  &none      &none      &none      &kp C_VOLUME_DOWN         &mkp LCLK         &mkp RCLK  &trans     &none  &none
-&none     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_MUTE                &kp RC(UP_ARROW)  &mkp MCLK  &none      &none  &none
+&kp LALT  &none      &none      &none      &kp C_VOLUME_DOWN         &mkp MCLK         &mkp LCLK  &trans     &none  &none
+&none     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_MUTE                &kp RC(UP_ARROW)  &mkp RCLK  &none      &none  &none
                                 &kp LGUI   &kp LEFT_SHIFT     &none                    &none      &kp RCTRL
             >;
         };
