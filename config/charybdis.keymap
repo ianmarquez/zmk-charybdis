@@ -110,6 +110,38 @@
             tapping-term-ms = <200>;
             bindings = <&kp Z>, <&kp CAPSLOCK>;
         };
+
+        tapdance_minus_underscore: tapdance_minus_underscore {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_MINUS_UNDERSCORE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hrm_left LEFT_GUI MINUS>, <&kp UNDERSCORE>;
+        };
+
+        tapdance_plus_equals: tapdance_plus_equals {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_PLUS_EQUALS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hrm_left LEFT_SHIFT PLUS>, <&kp EQUAL>;
+        };
+
+        tapdance_down_pagedown: tapdance_down_pagedown {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_DOWN_PAGEDOWN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hrm_right RIGHT_SHIFT DOWN_ARROW>, <&kp LC(D)>;
+        };
+
+        tapdance_up_pageup: tapdance_up_pageup {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_UP_PAGEUP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hrm_right RIGHT_GUI UP_ARROW>, <&kp LC(UP_ARROW)>;
+        };
     };
 
     combos {
@@ -140,10 +172,10 @@
 
         Symbols_Navigation {
             bindings = <
-&kp N1     &kp N2            &kp N3                    &kp N4                      &kp N5                    &kp N6    &kp N7                        &kp N8                    &kp N9     &kp N0
-&kp GRAVE  &kp SINGLE_QUOTE  &hrm_left LEFT_GUI MINUS  &hrm_left LEFT_SHIFT EQUAL  &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN_ARROW  &hrm_right LCMD UP_ARROW  &kp RIGHT  &kp PIPE
-&kp F1     &kp F12           &trans                    &tapdance_parens            &tapdance_square          &trans    &none                         &trans                    &trans     &trans
-                                                       &trans                      &trans            &trans            &trans                        &trans
+&kp N1           &kp N2            &kp N3                      &kp N4                 &kp N5                    &kp N6    &kp N7                  &kp N8                         &kp N9     &kp N0
+&tapdance_grave  &tapdance_quotes  &tapdance_minus_underscore  &tapdance_plus_equals  &tapdance_curly           &kp LEFT  &hrm_right RSHIFT DOWN  &hrm_right RIGHT_GUI UP_ARROW  &kp RIGHT  &kp PIPE
+&kp F1           &kp F12           &trans                      &tapdance_parens       &tapdance_square          &trans    &none                   &trans                         &trans     &trans
+                                                               &trans                 &trans            &trans            &trans                  &trans
             >;
         };
 
