@@ -69,6 +69,16 @@
             bindings = <&to 0>;
             key-positions = <5 33>;
         };
+
+        Escape_Combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <12 13>;
+        };
+
+        Caps_Combo {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <11 10>;
+        };
     };
 
     keymap {
@@ -94,10 +104,10 @@
 
         Numbers {
             bindings = <
-&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6      &kp N7                &kp N8             &kp N9           &kp N0
-&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT    &mt RIGHT_SHIFT DOWN  &mt RCMD UP_ARROW  &mt RCTRL RIGHT  &kp RIGHT_ALT
-&kp F2    &kp F11    &kp F10   &trans     &trans                 &kp DELETE  &trans                &trans             &trans           &trans
-                               &kp F1     &kp F5        &kp F12              &trans                &trans
+&kp N1    &kp N2     &kp N3    &kp N4     &kp N5           &kp N6      &kp N7                &kp N8             &kp N9           &kp N0
+&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &trans           &kp LEFT    &mt RIGHT_SHIFT DOWN  &mt RCMD UP_ARROW  &mt RCTRL RIGHT  &kp RIGHT_ALT
+&kp F2    &kp F11    &kp F10   &trans     &trans           &kp DELETE  &trans                &trans             &trans           &trans
+                               &kp F1     &kp F5  &kp F12              &trans                &trans
             >;
         };
 
