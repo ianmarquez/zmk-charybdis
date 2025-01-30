@@ -127,6 +127,14 @@
             tapping-term-ms = <250>;
             bindings = <&kp TAB>, <&mo 3>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&mo 3>, <&kp TAB>;
+        };
     };
 
     combos {
@@ -157,8 +165,8 @@
 
         Symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN       &tapdance_or_and  &kp DOLLAR  &tapdance_parens          &tapdance_multi_div  &kp N7  &kp N8  &kp N9  &kp N0
-&tapdance_grave  &tapdance_quotes  &kp MINUS         &kp PLUS    &tapdance_curly           &tapdance_gt         &kp N4  &kp N5  &kp N6  &trans
+&kp EXCLAMATION  &kp AT_SIGN       &tapdance_or_and  &kp DOLLAR  &tapdance_parens          &tapdance_multi_div  &kp N7  &kp N8  &kp N9  &trans
+&tapdance_grave  &tapdance_quotes  &kp MINUS         &kp PLUS    &tapdance_curly           &tapdance_gt         &kp N4  &kp N5  &kp N6  &kp N0
 &kp CARET        &kp POUND         &kp UNDER         &kp EQUAL   &tapdance_square          &kp PERCENT          &kp N1  &kp N2  &kp N3  &trans
                                                      &trans      &trans            &trans                       &trans  &trans
             >;
