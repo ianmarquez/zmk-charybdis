@@ -93,7 +93,7 @@
             label = "TAPDANCE_QUESTIONMARK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp QUESTION>, <&kp SLASH>;
+            bindings = <&kp QUESTION>, <&kp BACKSLASH>;
         };
 
         tapdance_grave: tapdance_grave {
@@ -112,12 +112,20 @@
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
 
-        tapdance_orand: tapdance_orand {
+        tapdance_or_and: tapdance_or_and {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_ORAND";
+            label = "TAPDANCE_OR_AND";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp AMPERSAND>, <&kp PIPE>;
+        };
+
+        tapdance_multi_div: tapdance_multi_div {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_MULTI_DIV";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ASTERISK>, <&kp SLASH>;
         };
     };
 
@@ -149,10 +157,10 @@
 
         Symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN       &tapdance_orand  &kp DOLLAR  &tapdance_parens          &kp PERCENT             &kp N7  &kp N8  &kp N9  &kp N0
-&tapdance_grave  &tapdance_quotes  &kp MINUS        &kp PLUS    &tapdance_curly           &tapdance_gt            &kp N4  &kp N5  &kp N6  &trans
-&kp CARET        &kp POUND         &kp UNDER        &kp EQUAL   &tapdance_square          &tapdance_questionmark  &kp N1  &kp N2  &kp N3  &trans
-                                                    &trans      &trans            &trans                          &trans  &trans
+&kp EXCLAMATION  &kp AT_SIGN       &tapdance_or_and  &kp DOLLAR  &tapdance_parens          &tapdance_multi_div     &kp N7  &kp N8  &kp N9  &kp N0
+&tapdance_grave  &tapdance_quotes  &kp MINUS         &kp PLUS    &tapdance_curly           &tapdance_gt            &kp N4  &kp N5  &kp N6  &kp PERCENT
+&kp CARET        &kp POUND         &kp UNDER         &kp EQUAL   &tapdance_square          &tapdance_questionmark  &kp N1  &kp N2  &kp N3  &trans
+                                                     &trans      &trans            &trans                          &trans  &trans
             >;
         };
 
