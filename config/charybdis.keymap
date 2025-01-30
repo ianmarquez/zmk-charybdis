@@ -77,9 +77,9 @@
         BASE {
             bindings = <
 &kp Q             &kp W              &kp E             &kp R                   &kp T                     &kp Y  &kp U                &kp I              &kp O               &kp P
-&hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                     &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &hrm_right RALT SEMI
+&hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                     &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &hrm_right RALT BACKSPACE
 &kp Z             &kp X              &kp C             &lt 3 V                 &kp B                     &kp N  &lt 4 M              &kp RIGHT_COMMAND  &kp TAB             &kp ESC
-                                                       &kp LSHIFT              &lt 1 SPACE  &lt 3 ENTER         &mt RCTRL ENTER      &lt 2 BACKSPACE
+                                                       &kp LSHIFT              &lt 1 SPACE  &lt 3 ENTER         &kp RCTRL            &lt 2 ENTER
             >;
         };
 
@@ -88,15 +88,15 @@
 &kp PIPE                  &kp EXCL                      &kp AMPERSAND                 &kp MINUS                       &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp PLUS                             &kp EQUAL               &kp ASTERISK            &kp BACKSLASH
 &hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LGUI DOUBLE_QUOTES  &hrm_left LEFT_SHIFT LESS_THAN  &kp LEFT_BRACE                &kp RIGHT_BRACE        &hrm_right RIGHT_SHIFT GREATER_THAN  &hrm_right RGUI PERIOD  &hrm_right RCTRL COMMA  &hrm_right RIGHT_ALT SLASH
 &kp CARET                 &kp POUND                     &kp UNDER                     &kp PERCENT                     &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp TILDE                            &kp AT                  &kp DOLLAR              &kp QUESTION
-                                                                                      &trans                          &trans                &trans                         &kp RCTRL                            &kp COLON
+                                                                                      &trans                          &trans                &trans                         &kp SEMI                             &kp COLON
             >;
         };
 
         Numbers {
             bindings = <
-&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6        &kp N7        &kp N8  &kp N9     &kp N0
-&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT      &kp DOWN      &kp UP  &kp RIGHT  &trans
-&kp F1    &kp F5     &kp F12   &trans     &trans                 &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans     &bt BT_CLR_ALL
+&kp N1    &kp N2     &kp N3    &kp N4     &kp N5                 &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
+&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp CAPSLOCK           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+&trans    &trans     &trans    &trans     &trans                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL
                                &kp F1     &kp F5        &kp F12                &trans        &trans
             >;
         };
