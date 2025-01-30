@@ -48,6 +48,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        toggle_mouse_layer {
+            bindings = <&tog 3>;
+            key-positions = <9 5 33>;
+        };
+
+        return_base_layer {
+            bindings = <&to 0>;
+            key-positions = <7 8 9>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
