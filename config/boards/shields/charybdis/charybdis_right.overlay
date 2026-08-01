@@ -56,7 +56,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <600>;
+        cpi = <200>;
         swap-xy;
         invert-x;
         invert-y;
@@ -68,6 +68,17 @@
 };
 
 / {
+  behaviors {
+    cpi_cycle: cpi_cycle {
+      compatible = "zmk,behavior-sensor-attr-cycle";
+      #binding-cells = <1>;
+      sensor_device = <&trackball>;
+      attr = <0>;
+      values = <200 400 600 800>;
+      display-name = "CPI Cycle";
+    };
+  };
+
   trackball_listener: trackball_listener {
     compatible = "zmk,input-listener";
     status = "okay";

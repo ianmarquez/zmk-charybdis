@@ -7,6 +7,14 @@
 
 #define U_TAPPING_TERM 200
 
+#if defined(CONFIG_SHIELD_CHARYBDIS_RIGHT)
+#define CPI_CYCLE_FORWARD_BINDING &cpi_cycle 1
+#define CPI_CYCLE_BACKWARD_BINDING &cpi_cycle 3
+#else
+#define CPI_CYCLE_FORWARD_BINDING &none
+#define CPI_CYCLE_BACKWARD_BINDING &none
+#endif
+
 &lt {
     tapping-term-ms = < U_TAPPING_TERM >;
     quick-tap-ms = < U_TAPPING_TERM >;
@@ -43,37 +51,6 @@
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
         };
 
-        tapdance_curly: tapdance_curly {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_CURLY";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-        };
-
-        tapdance_square: tapdance_square {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_SQUARE";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-        };
-
-        tapdance_tab_mouselayer: tapdance_tab_mouselayer {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_TAB_MOUSELAYER";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&mo 3>, <&kp TAB>;
-        };
-
-        tapdance_z_capslock: tapdance_z_capslock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_Z_CAPSLOCK";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp Z>, <&kp CAPSLOCK>;
-        };
     };
 
     combos {
@@ -122,7 +99,7 @@
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5           &trans  &trans     &trans            &trans  &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5           &trans  CPI_CYCLE_FORWARD_BINDING  CPI_CYCLE_BACKWARD_BINDING             &trans  &trans
 &trans      &trans             &trans           &trans  &trans          &trans  &mkp LCLK  &mkp RCLK         &trans  &trans
 &trans      &trans             &trans           &trans  &trans          &trans  &trans     &trans            &trans  &trans
                                                 &trans  &trans  &trans          &kp F11    &kp RC(UP_ARROW)
