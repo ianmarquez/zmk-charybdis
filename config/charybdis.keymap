@@ -8,11 +8,15 @@
 #define U_TAPPING_TERM 200
 
 #if defined(CONFIG_SHIELD_CHARYBDIS_RIGHT)
+
 #define CPI_CYCLE_FORWARD_BINDING &cpi_cycle 1
 #define CPI_CYCLE_BACKWARD_BINDING &cpi_cycle 3
+
 #else
+
 #define CPI_CYCLE_FORWARD_BINDING &none
 #define CPI_CYCLE_BACKWARD_BINDING &none
+
 #endif
 
 &lt {
@@ -50,7 +54,6 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
         };
-
     };
 
     combos {
@@ -72,10 +75,10 @@
 
         BASE {
             bindings = <
-&kp Q             &kp W              &kp E             &kp R                   &kp T                   &kp Y  &kp U                &kp I                &kp O               &kp P
-&hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                   &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K    &hrm_right RCTRL L  &hrm_right LALT SEMI
-&kp Z             &kp X              &kp C             &kp V                   &kp B                   &kp N  &lt 4 M              &kp COMMA            &kp PERIOD          &lt 5 SLASH
-                                                       &mt LSHIFT ESCAPE       &lt 1 SPACE  &lt 3 TAB         &lt 2 ENTER          &mt RCTRL BACKSPACE
+&kp Q             &kp W              &kp E             &kp R                   &kp T                   &kp Y  &kp U                &kp I              &kp O               &kp P
+&hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                   &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &hrm_right LALT SEMI
+&kp Z             &kp X              &kp C             &kp V                   &kp B                   &kp N  &lt 4 M              &kp COMMA          &kp PERIOD          &lt 5 SLASH
+                                                       &mt LSHIFT ESCAPE       &lt 1 SPACE  &lt 3 TAB         &mt LCTRL ENTER      &lt 2 BACKSPACE
             >;
         };
 
@@ -99,10 +102,10 @@
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5           &trans  CPI_CYCLE_FORWARD_BINDING  CPI_CYCLE_BACKWARD_BINDING             &trans  &trans
-&trans      &trans             &trans           &trans  &trans          &trans  &mkp LCLK  &mkp RCLK         &trans  &trans
-&trans      &trans             &trans           &trans  &trans          &trans  &trans     &trans            &trans  &trans
-                                                &trans  &trans  &trans          &kp F11    &kp RC(UP_ARROW)
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5                        &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &trans
+&trans      &trans             &trans           &trans  &mkp LCLK                    &mkp RCLK                                                    &trans  &trans  &trans  &trans
+&trans      &trans             &trans           &trans  &trans                       &trans                                                       &trans  &trans  &trans  &trans
+                                                &trans  &kp F11    &kp RC(UP_ARROW)
             >;
         };
 
